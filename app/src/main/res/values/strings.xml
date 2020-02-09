@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MyAudioPlayer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_opne">Open nav drawer</string>
+    <string name="navigation_drawer_close">Close nav drawer</string>
+    <string name="subjects">Subjects</string>
+    <string name="oral_pathology">Oral Pathology</string>
+    <string name="prothesis">Prothesis</string>
+    <string name="crown">Crown</string>
+    <string name="operative">Operative</string>
+    <string name="ortho">Ortho</string>
+    <string name="pedo">Pedo</string>
+    <string name="pharma">Pharma</string>
+
+    <!-- Broadcast Receivers -->
+    <string name="broadcast_seekbar_update">broadcast_seekbar_update</string>
+    <string name="broadcast_seekbar_value">broadcast_seekbar_value</string>
+    <string name="broadcast_update_ui">broadcast_update_ui</string>
+    <string name="broadcast_new_media_id">broadcast_new_media_id</string>
+
+    <string name="fragment_base_media">MediaBaseFragment</string>
+    
+    <string name="download_channel_name">Download</string>
+
+    <string name="string_remove_from_playlist">Remove from playlist?</string>
+    <string name="string_yes">yes</string>
+    <string name="string_no">no</string>
+    <string name="label_stop">Stop</string>
+    <string name="label_pause">Pause</string>
+    <string name="label_play">Play</string>
+    <string name="label_play_pause">Play and pause toggle</string>
+    <string name="label_previous">Previous track</string>
+    <string name="label_next">Next track</string>
+
+    <string name="custom_action">Custom Action</string>
+    <string name="custom_action_increase_15">Increase Custom Action</string>
+    <string name="custom_action_decrease_15">Decrease Custom Action</string>
+</resources>

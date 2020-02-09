@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/speed_.75"
+            android:title=".75x"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/speed_1"
+            android:title="1x"
+            app:showAsAction="never"
+            android:checked="true"/>
+        <item
+            android:id="@+id/speed_1.25"
+            android:title="1.25x"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/speed_1.5"
+            android:title="1.5x"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/speed_2"
+            android:title="2x"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/speed_3"
+            android:title="3x"
+            app:showAsAction="never" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/tool_bar_full_panel"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/expand_more_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_expand_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/expand_more_image_view"
+            android:gravity="center_vertical"
+            android:text="Record"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <!--<ImageView
+            android:id="@+id/download_media_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="26dp"
+            android:layout_toLeftOf="@id/speed_image_view"
+            android:src="@drawable/ic_cloud_download" />-->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/download_could_animation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="26dp"
+            android:layout_toLeftOf="@id/speed_image_view"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/download_cloud" />
+
+        <ImageView
+            android:id="@+id/speed_image_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_speed"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/full_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/tool_bar_full_panel"
+        android:layout_marginBottom="40dp"
+        android:clickable="true">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tooth_headphones" />
+
+
+        <TextView
+            android:id="@+id/full_panel_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="this is the text title"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/full_panel_text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_panel_text_title"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:text="this is the text description"
+            android:textSize="16sp" />
+
+
+        <com.thealien.myaudioplayer.util.MediaSeekBar
+            android:id="@+id/full_panel_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_panel_text_description"
+            android:thumbTint="#000" />
+
+        <Chronometer
+            android:id="@+id/chronometer_current_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_panel_seek_bar"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <Chronometer
+            android:id="@+id/chronometer_full_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_panel_seek_bar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/full_panel_skip_to_previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toLeftOf="@id/play_pause_full_panel"
+            android:src="@drawable/ic_skip_previous_black_24dp" />
+
+        <ImageView
+            android:id="@+id/play_pause_full_panel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/play_button" />
+
+
+        <ImageView
+            android:id="@+id/full_panel_skip_to_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@id/play_pause_full_panel"
+            android:src="@drawable/ic_skip_next_black_24dp" />
+
+        <ImageView
+            android:id="@+id/skip_15_to_previous_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_skip_15_back" />
+
+        <ImageView
+            android:id="@+id/skip_15_to_next_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_skip_ahead_15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/media_song_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/play_pause_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimary"
+            android:padding="7dp"
+            android:src="@drawable/ic_play" />
+
+        <ProgressBar
+            android:id="@+id/horizontal_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:progressTint="#fff" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "289182234884",
+    "firebase_url": "https://striped-handler-215820.firebaseio.com",
+    "project_id": "striped-handler-215820",
+    "storage_bucket": "striped-handler-215820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289182234884:android:1f2b5fd1efca1e50967851",
+        "android_client_info": {
+          "package_name": "com.thealien.myaudioplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289182234884-o2m1um98dai1g35ahutp31igtkqgt494.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thealien.myaudioplayer",
+            "certificate_hash": "9095a13d0f4715dadeae070d132d2f52b51c575f"
+          }
+        },
+        {
+          "client_id": "289182234884-f0uuonl41do24cjv9kcdmq9a2rjcbal4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3mVwyVa3oHMt7LafV7LVU_IK0TIzEvEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289182234884-f0uuonl41do24cjv9kcdmq9a2rjcbal4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
