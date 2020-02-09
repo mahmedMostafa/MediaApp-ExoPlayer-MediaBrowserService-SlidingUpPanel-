@@ -1,2 +1,2 @@
 # MediaApp
-Audio Player app that plays music in the background with clean code organization 
+(Music Streaming App) : An Android app that provides some audio media to play stored in firestore , the user can select more than room each has different playlist of songs and records , and can play the media in offline mode cached in the device (MVC , ExoPlayer , MediaBrowserService , MediaSessionCompat , MediaControllerCompat , Cachin with SharedPrefrences & ExoPlayer Cache data source , SlidingUpPanel , NaviagtionDrawer , Forground Service with notification and finally DownloadManager Service)
